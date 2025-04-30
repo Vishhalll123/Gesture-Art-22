@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gesture Art</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#" id="nav-home">
+            <img src="images/brand_icon.png" alt="Brand Icon" style="height: 30px; width: 30px; margin-right: 8px;">
+            <span>Gesture Art</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" id="nav-home-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="nav-register-link">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="nav-login-link">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="nav-help-link">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="nav-logout-link">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4 fade-in">
+        <!-- Home Section -->
+        <section id="home-section" class="active">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow-sm" style="min-height: 300px; color: black; background-color: #fff9c4;">
+                        <h3>Introduction to Virtual Painting</h3>
+                        <img src="images/hand_indx.png" alt="Hand Index" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+                        <p>Virtual Painting is an innovative way to create art using hand gestures and technology. It allows artists and enthusiasts to paint in a digital space without traditional tools, offering a unique and immersive creative experience.</p>
+                        <p>This technology leverages computer vision and gesture recognition to translate hand movements into brush strokes on a digital canvas. It opens new possibilities for creativity, accessibility, and interactive art installations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow-sm" style="min-height: 300px; color: black; font-size: 1rem;">
+                        <h3>Hand Gesture Recognition</h3>
+                        <img src="images/gest_bl.jpg" alt="Hand Gestures" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+                        <p>Hand gestures are captured using advanced computer vision techniques and sensors. These gestures are then interpreted by the system to create dynamic and interactive digital paintings, allowing users to paint without physical brushes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow-sm" style="min-height: 300px; color: black;">
+                        <h3>Real-Time Uses of Hand Gestures</h3>
+                        <img src="images/real.jpg" alt="Real Time Uses" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+                        <p>Hand gesture recognition technology has numerous real-time applications including virtual reality (VR) and augmented reality (AR) interfaces, touchless control systems, sign language interpretation, gaming, and interactive art installations. These applications enhance user experience by providing intuitive and natural ways to interact with digital environments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Register Section -->
+        <section id="register-section" style="display:none;">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Register</h2>
+                    <form id="register-form" method="post" action="/register">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirm_password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm_password" name="confirm_password" required />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Login Section -->
+        <section id="login-section" style="display:none;">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Login</h2>
+                    <form id="login-form" method="post" action="/login">
+                        <div class="mb-3">
+                            <label for="username_or_email" class="form-label">Username or Email</label>
+                            <input type="text" class="form-control" id="username_or_email" name="username_or_email" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Section -->
+        <section id="help-section" style="display:none;">
+            <div class="mt-5">
+                <div class="card mb-4 help-card fade-in">
+                    <div class="card-header">
+                        <h2>Help - Virtual Painting</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Welcome to the help page. Here you can find information and guidance on how to use the Virtual Painting application.</p>
+                        <ul>
+                            <li>Use hand gestures to paint on the canvas.</li>
+                            <li>Start and stop the webcam feed using the buttons.</li>
+                            <li>Select colors from the palette to change brush color.</li>
+                            <li>Save and load your drawings.</li>
+                            <li>Register and login to save your work securely.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Painting Section -->
+        <section id="painting-section" style="display:none;">
+            <h1>Virtual Painting with Hand Gestures</h1>
+            <div class="app-container">
+                <!-- Webcam Feed -->
+                <div class="webcam-container">
+                    <img id="webcam-feed" src="/video_feed" alt="Webcam Feed">
+                </div>
+                <!-- Drawing Canvas -->
+                <div class="canvas-container">
+                    <canvas id="drawing-canvas" width="640" height="480"></canvas>
+                </div>
+            </div>
+            <!-- Controls -->
+            <div class="controls mt-3">
+                <button id="start-btn" class="btn btn-primary me-2">Start</button>
+                <button id="stop-btn" class="btn btn-secondary me-2">Stop</button>
+                <button id="clear-btn" class="btn btn-danger me-2">Clear Canvas</button>
+                <button id="undo-btn" class="btn btn-warning me-2">Undo</button>
+                <button id="redo-btn" class="btn btn-warning me-2">Redo</button>
+                <button id="save-btn" class="btn btn-success me-2">Save Drawing</button>
+                <button id="load-btn" class="btn btn-info me-2">Load Drawing</button>
+                <input type="file" id="file-input" accept=".png,.jpg,.jpeg" style="display: none;">
+                <div class="color-palette mt-3 d-flex gap-2">
+                    <div class="color rounded-circle" style="background-color: red; width: 30px; height: 30px;" data-color="255,0,0"></div>
+                    <div class="color rounded-circle" style="background-color: blue; width: 30px; height: 30px;" data-color="0,0,255"></div>
+                    <div class="color rounded-circle" style="background-color: green; width: 30px; height: 30px;" data-color="0,255,0"></div>
+                    <div class="color rounded-circle" style="background-color: yellow; width: 30px; height: 30px;" data-color="255,255,0"></div>
+                    <div class="color rounded-circle" style="background-color: purple; width: 30px; height: 30px;" data-color="128,0,128"></div>
+                    <div class="color rounded-circle" style="background-color: black; width: 30px; height: 30px;" data-color="0,0,0"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white mt-5 p-4 text-center">
+        <div class="container">
+            <h5>Contact Us</h5>
+            <div class="d-flex justify-content-center gap-4 mt-3">
+                <a href="https://www.instagram.com/vishh_al_23_/" target="_blank" class="text-white fs-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/yourprofile" target="_blank" class="text-white fs-4">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="tel:95537 06650" class="text-white fs-4">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:vishalgudla2@gmail.com" class="text-white fs-4">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="mt-3 mb-0">&copy; 2025 Gesture Art. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Socket.io -->
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

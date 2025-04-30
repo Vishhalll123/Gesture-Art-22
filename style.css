@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    /* Removed background image */
+    color: white;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.webcam-container {
+    position: relative;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.color-header {
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+
+.color-header .color {
+    flex: 1;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    border-radius: 0;
+}
+
+.color-header .color:hover {
+    opacity: 0.8;
+}
+
+.color-header .red { background-color: red; }
+.color-header .green { background-color: green; }
+.color-header .blue { background-color: blue; }
+.color-header .yellow { background-color: yellow; }
+.color-header .purple { background-color: purple; }
+.color-header .black { background-color: black; }
+
+.canvas-container {
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: black;
+}
+
+#webcam-feed, #drawing-canvas {
+    display: block;
+    width: 640px;
+    height: 480px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#start-btn {
+    background-color: #4CAF50;
+}
+
+#stop-btn {
+    background-color: #f44336;
+}
+
+#stop-btn:hover {
+    background-color: #d32f2f;
+}
+
+#save-btn {
+    background-color: #2196F3;
+}
+
+#save-btn:hover {
+    background-color: #0b7dda;
+}
+
+#load-btn {
+    background-color: #ff9800;
+}
+
+#load-btn:hover {
+    background-color: #e68a00;
+}
+
+.color-palette {
+    display: flex;
+    gap: 10px;
+}
+
+.color-palette .color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #333;
+    transition: transform 0.2s;
+}
+
+.color-palette .color:hover {
+    transform: scale(1.1);
+}
+
+/* New fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+/* Help page card styling for professional UI */
+.help-card {
+    background-color: #1a2a40; /* dark blue */
+    color: #e0e0e0; /* light gray */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.card-header {
+    font-weight: 700;
+    border-bottom: 2px solid #0aefff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.card-header h2, .card-header h3 {
+    margin: 0;
+}
+
+.card-body p, .card-body ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.card-body ul {
+    padding-left: 20px;
+}
+
+.card-body ul li {
+    margin-bottom: 8px;
+}
