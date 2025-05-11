@@ -1,6 +1,7 @@
-Gesture-Art -AI VIRTUAL PAINTING USING HAND GESTURES
+##  Gesture-Art -AI VIRTUAL PAINTING USING HAND GESTURES
 
-A brief description of your project. Explain what it does and its purpose.
+ ```This project is a simple web application with a Python backend and a frontend built using HTML, CSS, and JavaScript. It allows users to interact with the application through a web interface, with backend logic handled by the Python app.py file. The project also includes various image assets and drawing files used within the application. ```
+
 
 ## Installation
 
@@ -52,3 +53,8 @@ This project is licensed under the MIT License.
 
 For any questions or feedback, please contact vishalgudla2@gmail.com
 cell no-9553706650
+
+
+
+Project Screenshot
+![Image](https://github.com/user-attachments/assets/be12ed66-8536-4383-b015-6c7021fb2446)
