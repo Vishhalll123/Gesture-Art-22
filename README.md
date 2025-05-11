@@ -7,12 +7,11 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-nam.git
+   git clone https://github.com/Vishhalll123/Gesture-Art-22.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd your-repo-name
-   ```
+   cd Gesture-Art-22   ```
 3. (Optional) Create and activate a virtual environment:
    ```bash
    python -m venv venv
@@ -49,10 +48,11 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 This project is licensed under the MIT License.
 
+
 ## Contact
 
 # For any questions or feedback, please contact   vishalgudla2@gmail.com
- # cell no-9553706650
+  cell no-9553706650
 
 
 
