@@ -1,0 +1,7 @@
+Flask
+flask-socketio
+opencv-python
+mediapipe
+numpy
+openpyxl
+eventlet
